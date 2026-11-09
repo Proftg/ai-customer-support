@@ -1,7 +1,6 @@
 # AI customer support
 
-An email support agent: it polls a Gmail inbox, classifies each message, and drafts an answer with an LLM agent. Built step by step from the Datalumina "Customer Support Automation" course.
-
+An email support agent: it polls a Gmail inbox, classifies each message, and drafts an answer with an LLM agent.
 ## Stack
 
 Python 3.13, uv, FastAPI, Pydantic AI (Anthropic), Postgres, Gmail API.
