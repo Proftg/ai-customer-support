@@ -3,7 +3,7 @@
 An email support agent: it polls a Gmail inbox, classifies each message, and drafts an answer with an LLM agent.
 ## Stack
 
-Python 3.13, uv, FastAPI, Pydantic AI (Anthropic), Postgres, Gmail API.
+Python 3.13, uv, FastAPI, Pydantic AI (Groq), Postgres, Gmail API.
 
 ## Run
 
