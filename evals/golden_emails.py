@@ -52,4 +52,16 @@ GOLDEN_EMAILS = [
          "other", "escalate"),
     case("unknown-topic", "Oliver Brown <oliver@example.com>", "Mortgage",
          "Do you offer mortgages and what is the rate?", "other", "escalate"),
+    # held-out cases, written after the prompt fixes and never used to tune it
+    case("young-price-fr", "Hugo Remy <hugo@example.com>", "Compte ado",
+         "Bonjour, quel est le prix du compte Sambre Young pour ma fille de 15 ans ?",
+         "cards-and-accounts", "reply"),
+    case("cash-limit-en", "Nina Kaur <nina@example.com>", "Cash",
+         "What is the most cash I can withdraw per week with my debit card?", "cards-and-accounts", "reply"),
+    case("sign-payment-nl", "Jef Claes <jef@example.com>", "Betaling",
+         "Moet ik een betaling van 80 euro altijd in de app bevestigen?", "online-banking", "reply"),
+    case("branch-walk-in", "Sara Wu <sara@example.com>", "Branch",
+         "Can I just walk into a branch without an appointment?", "delays-and-channels", "reply"),
+    case("manager-request", "Paul Day <paul@example.com>", "Manager",
+         "I would like to speak to your manager about my account.", "other", "escalate"),
 ]

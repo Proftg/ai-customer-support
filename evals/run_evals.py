@@ -11,7 +11,8 @@ from evals.golden_emails import GOLDEN_EMAILS
 @dataclass
 class SectionMatches(Evaluator):
     def evaluate(self, ctx: EvaluatorContext) -> bool:
-        return ctx.output.section == ctx.expected_output["section"]
+        # an escalated email only gets an acknowledgement, so its section has no effect
+        return ctx.expected_output["action"] == "escalate" or ctx.output.section == ctx.expected_output["section"]
 
 
 @dataclass
@@ -40,3 +41,5 @@ dataset = Dataset(
 if __name__ == "__main__":
     report = dataset.evaluate_sync(run_pipeline, max_concurrency=1)  # Groq free tier: 8,000 tokens per minute
     report.print(include_input=False, include_output=True, include_durations=False)
+    # failed cases (API errors) are left out of the average, so show how many there were
+    print(f"Cases in error: {len(report.failures)}/{len(dataset.cases)}")

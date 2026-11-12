@@ -13,7 +13,8 @@ Sections:
   delivery of a new card or PIN letter, and a card that has not arrived
 - online-banking: the app, login, signing payments, app code, new phone, safe use
 - unauthorized-payments: payments the customer did not make, refunds, phishing, disputes
-- delays-and-channels: opening hours, contact channels, internal processing times (not card delivery)
+- delays-and-channels: opening hours, contact channels, internal processing times such as closing an account
+  (not card delivery)
 - other: anything else
 
 Set needs_human to true when the customer:
