@@ -89,5 +89,5 @@ uv run python -m evals.run_evals
 - [x] Classifier, agent, rules and decision
 - [x] Evaluations
 - [x] Docker files
-- [ ] Server deployment
+- [x] Server deployment
 - [ ] Admin dashboard
